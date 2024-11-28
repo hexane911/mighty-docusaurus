@@ -1,12 +1,25 @@
+import BrowserOnly from "@docusaurus/BrowserOnly";
 import Layout from "@theme/Layout";
-import { MightyPage } from "mighty-academy-widget";
+import { useEffect, useState } from "react";
+
+const BrowserComponent = () => {
+  const [Component, setComponent] = useState(null);
+
+  useEffect(() => {
+    import("mighty-academy-widget").then((module) =>
+      setComponent(() => module.MightyPage)
+    );
+  }, []);
+
+  if (!Component) return <div>Loading...</div>;
+  return <Component partnerId="Mighty" theme="light" />;
+};
 
 export default function Home() {
-
   return (
     <Layout>
       <main>
-        <MightyPage partnerId="Mighty" theme="light" />
+        <BrowserOnly>{() => <BrowserComponent />}</BrowserOnly>
       </main>
     </Layout>
   );
