@@ -15,7 +15,7 @@ const config = {
     "Mighty Widget supercharges online learning with powerful gamification tools.",
   favicon: "img/logo.png",
 
-  url: "https://hexane911.github.io/mighty-docusaurus/",
+  url: "https://hexane911.github.io",
   baseUrl: "/mighty-docusaurus/",
   organizationName: "Hexane911", // Usually your GitHub org/user name.
   projectName: "mighty-docusaurus", // Usually your repo name.
