@@ -16,7 +16,7 @@ npm install mighty-academy-widget
 :::info Always make sure that client-side code builds correctly. 
 :::
 
-```js title="src/theme/Root.js"
+```jsx title="src/theme/Root.js"
 import React, { useState, useEffect } from "react";
 import BrowserOnly from "@docusaurus/BrowserOnly";
 
@@ -48,7 +48,7 @@ export default Root;
 
 #### Sidebar button
 
-```js title="src/components/buttonDemo.js"
+```jsx title="src/components/buttonDemo.js"
 import { MightyWidget, MightyPage } from 'mighty-academy-widget';
 import BrowserOnly from "@docusaurus/BrowserOnly";
 import { useEffect, useState } from "react";
@@ -87,7 +87,7 @@ export const ButtonWidgetDemo = (props) => (
 );
 ```
 #### Full page
-```js title="src/pages/index.js"
+```jsx title="src/pages/index.js"
 import BrowserOnly from "@docusaurus/BrowserOnly";
 import Layout from "@theme/Layout";
 import { useEffect, useState } from "react";
