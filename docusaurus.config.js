@@ -23,7 +23,7 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "Mighty Academy", // Usually your GitHub org/user name.
+  organizationName: "Hexane911", // Usually your GitHub org/user name.
   projectName: "mighty-docusaurus", // Usually your repo name.
 
   onBrokenLinks: "throw",
@@ -54,6 +54,7 @@ const config = {
       }),
     ],
   ],
+  deploymentBranch: 'gh-pages',
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
